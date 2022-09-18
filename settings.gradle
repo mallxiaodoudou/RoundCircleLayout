@@ -1,0 +1,3 @@
+rootProject.name = "RoundCircleLayout"
+include ':sample'
+include ':round_img_lib'

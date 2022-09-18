@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <com.newki.round_circle_layout.RoundCircleNestedScrollView
+        android:layout_marginTop="@dimen/d_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:round_radius="@dimen/d_30dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f1f1f1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/d_15dp"
+            android:paddingTop="@dimen/d_15dp"
+            android:paddingRight="@dimen/d_15dp">
+
+            <com.newki.round_circle_layout.RoundCircleFrameLayout
+                android:layout_width="@dimen/d_150dp"
+                android:layout_height="@dimen/d_150dp"
+                android:background="@color/gray"
+                app:round_radius="@dimen/d_20dp">
+
+                <!--                                <View-->
+                <!--                                    android:layout_width="match_parent"-->
+                <!--                                    android:layout_height="match_parent"-->
+                <!--                                    android:background="@color/gray" />-->
+
+            </com.newki.round_circle_layout.RoundCircleFrameLayout>
+
+            <com.newki.round_circle_layout.RoundCircleConstraintLayout
+                android:id="@+id/layout_2"
+                android:layout_width="@dimen/d_150dp"
+                android:layout_height="@dimen/d_150dp"
+                android:layout_marginTop="@dimen/d_10dp"
+                app:is_circle="true"
+                app:round_circle_background_color="#ff00ff"
+                app:round_radius="@dimen/d_40dp">
+
+                <!--                app:round_circle_background_color="#ff00ff"   -->
+                <!--                android:background="#ff00ff"    -->
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="#ff00ff" />
+
+
+            </com.newki.round_circle_layout.RoundCircleConstraintLayout>
+
+
+            <com.newki.round_circle_layout.RoundCircleLinearLayout
+                android:id="@+id/layout_3"
+                android:layout_width="@dimen/d_150dp"
+                android:layout_height="@dimen/d_150dp"
+                android:layout_marginTop="@dimen/d_10dp"
+                app:bottomRight="@dimen/d_20dp"
+                app:round_circle_background_drawable="@drawable/chengxiao"
+                app:topLeft="@dimen/d_20dp"
+                app:topRight="@dimen/d_40dp">
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="#03A9F4" />
+
+            </com.newki.round_circle_layout.RoundCircleLinearLayout>
+
+
+            <com.newki.round_circle_layout.RoundCircleConstraintLayout
+                android:layout_width="@dimen/d_150dp"
+                android:layout_height="@dimen/d_150dp"
+                android:layout_marginTop="@dimen/d_10dp"
+                app:is_bg_center_crop="false"
+                app:is_circle="true"
+                app:round_circle_background_drawable="@drawable/chengxiao">
+
+
+            </com.newki.round_circle_layout.RoundCircleConstraintLayout>
+
+
+            <com.newki.round_circle_layout.RoundCircleRelativeLayout
+                android:layout_width="@dimen/d_150dp"
+                android:layout_height="@dimen/d_150dp"
+                android:layout_marginTop="@dimen/d_10dp"
+                app:round_circle_background_drawable="@drawable/chengxiao"
+                app:round_radius="@dimen/d_40dp" />
+
+
+            <com.newki.round_circle_layout.RoundCircleFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_10dp"
+                app:topLeft="@dimen/d_40dp"
+                app:topRight="@dimen/d_40dp">
+
+                <View
+                    android:layout_width="@dimen/d_150dp"
+                    android:layout_height="@dimen/d_150dp"
+                    android:background="#ff5500" />
+
+            </com.newki.round_circle_layout.RoundCircleFrameLayout>
+
+        </LinearLayout>
+
+    </com.newki.round_circle_layout.RoundCircleNestedScrollView>
+
+
+</LinearLayout>
